@@ -1,3 +1,14 @@
+
+#recebo a lista de numeros(pode ser vazia)
+#pego o tamanho da lista
+#checo numero por numero e os somo
+#caso não exista numeros dentro da lista retorna zero
+#faco a media com a soma dos numeros e o tamanho da lista
+#checo quais numeros são maiores do que a media
+#guardo esses numeros
+#printo apenas a quantidade de numeros maiores
+
+
 def media_acima(numeros):
     soma = 0
     tamanho = len(numeros)
