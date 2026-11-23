@@ -1,16 +1,18 @@
-# a função recebe as listas pré definidas de precos atuais e alvos
-# eu desmembro os alvos para comparar as chaves com os valores delas
-# caso eu não tenha o preço atual do produto eu não o adiciono na lista para não ter probllema de key error
-# coso não tenha alvos eu retorno uma lista vazia
-# retorna a lista com os nomes dos produtos
+# a função recebe os preços e alvos como paramentros
+# inicio uma lista vazia para adicionar os nomes dos produtos que estão com o preço abaixo ou igual o alvo
+# procuro na lista de preços alvos produto por produto
+# checo se a chave do produto atual existe em precos e se o valor do produto está menor ou igual ao alvo
+# caso passe nos testes eu adiciono na lista
+# retorno o resultado
+
 
 def produtos_em_alerta(precos, alvos):
     
     resultado = []
 
-    for alvo in alvos:
-        if alvo in precos and precos[alvo] <= alvos[alvo]:
-            resultado.append(alvo)
+    for produto in alvos:
+        if produto in precos and precos[produto] <= alvos[produto]:
+            resultado.append(produto)
         
     return resultado
 
