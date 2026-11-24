@@ -1,6 +1,6 @@
 # para cada produto do histórico:
 # pego a lista de preços do produto
-# começo sem nenhum menor (None)          ← dentro do for de fora!
+# começo sem nenhum menor (None)
 # para cada preço da lista:
 # se ainda não tenho menor OU o preço é menor que o que tenho:
 # esse preço passa a ser o menor
