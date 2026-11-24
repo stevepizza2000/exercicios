@@ -1,23 +1,29 @@
-# pego o historico passado como parametro
-# incio a lista que irá guardar os menores valores
-# pego a primeira chave com um for
-# com a chave pego a lista com os historicos de valores do produto
-# pego os valores dentro da lista e comparo eles até achar o menor
+# para cada produto do histórico:
+# pego a lista de preços do produto
+# começo sem nenhum menor (None)          ← dentro do for de fora!
+# para cada preço da lista:
+# se ainda não tenho menor OU o preço é menor que o que tenho:
+# esse preço passa a ser o menor
+# se encontrei algum menor (a lista não estava vazia):
+# guardo no resultado: produto → menor
+# retorno o resultado
 
 def menores_precos(historico):
 
-    resultado = {} 
-    atual = None
+    resultado = {}
 
     for produto in historico:
-        atual = None
         precos_do_produto = historico[produto]
+        menor = None
         for preco in precos_do_produto:
-            if atual is None or preco < atual:
-                atual = preco
-                resultado = preco
+            if menor is None or preco < menor:
+                menor = preco
         
+        if menor is not None:   
+            resultado[produto] = menor
+    
     return resultado
+        
 
 
 
