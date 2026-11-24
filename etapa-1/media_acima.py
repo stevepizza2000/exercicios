@@ -1,13 +1,14 @@
 
-#recebo a lista de numeros(pode ser vazia)
-#pego o tamanho da lista
-#checo numero por numero e os somo
-#caso não exista numeros dentro da lista retorna zero
-#faco a media com a soma dos numeros e o tamanho da lista
-#checo quais numeros são maiores do que a media
-#guardo esses numeros
-#printo apenas a quantidade de numeros maiores
-
+# recebo a lista de numeros(pode ser vazia)
+# pego o tamanho da lista
+# inicio o contador
+# se o tamanho da lista for igual a 0 eu retorno 0
+# para cada numero na lista eu somo com o resultado total
+# faço a media aritmetica
+# para cada numero em numeros
+# se numero for maior que a media
+# some 1 ao contador
+# retorne o contador
 
 def media_acima(numeros):
     soma = 0
